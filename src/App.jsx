@@ -1,7 +1,10 @@
 
+import { useState } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [incompleteTodos, setincompleteTodos] = useState(["test1","test2"]);
+  const [completedTodos, setcompletedTodos] = useState(["test3","test4"])
   return (
     <>
       <div className='input-area'>
@@ -11,30 +14,34 @@ function App() {
       <div className='incomplete-area'>
         <p className='title'>Incomplete tasks</p>
         <ul>
-            <li className='list-row'>
-              <p className='todo-item'>create a todo list</p>
-              <button>Complete</button>
-              <button>Delete</button>
-            </li>
-            <li className='list-row'>
-              <p className='todo-item'>create a todo list</p>
-              <button>Complete</button>
-              <button>Delete</button>
-            </li>
+          {incompleteTodos.map((todo)=>{
+            return(
+              <li key={todo}>
+                <div className='list-row'>
+                  <p className='todo-item'>{todo}</p>
+                  <button>Complete</button>
+                  <button>Delete</button>
+                </div>
+              </li>
+            )
+          })}
         </ul>
       </div>
       <div className='complete-area'>
         <p className='title'>Completed tasks</p>
         <ul>
-            <li className='list-row'>
-              <p className='todo-item'>create a todo list</p>
-              <button>Restore</button>
-            </li>
-            <li className='list-row'>
-              <p className='todo-item'>create a todo list</p>
-              <button>Restore</button>
-              
-            </li>
+          {completedTodos.map((todo)=>{
+            return(
+              <li key={todo}>
+                <div className='list-row'>
+                  <p className='todo-item'>{todo}</p>
+                  <button>Restore</button>
+                </div>
+              </li>
+            )
+          })}
+            
+            
         </ul>
       </div>
 
