@@ -3,8 +3,8 @@ import { useState } from 'react';
 import './App.css';
 
 const App = () => {
-  const [incompleteTodos, setincompleteTodos] = useState(["test1","test2"]);
-  const [completedTodos, setcompletedTodos] = useState(["test3","test4"])
+  const [incompleteTodos, setincompleteTodos] = useState([]);
+  const [completedTodos, setcompletedTodos] = useState([])
   const[todoText, settodoText] = useState("")
 
   const onChanageTodotext = (event) =>{ settodoText(event.target.value)}
@@ -12,6 +12,7 @@ const App = () => {
   const onClickAdd = () => {
     const newTodos = [...incompleteTodos,todoText]
     setincompleteTodos(newTodos)
+    settodoText("")
   }
 
   const onClickDelete = (index) =>{
@@ -75,11 +76,7 @@ const App = () => {
           })}  
         </ul>
       </div>
-
-
-    </>
-
-    
+    </>    
   );
 }
 
