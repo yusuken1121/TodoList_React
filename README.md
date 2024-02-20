@@ -20,7 +20,7 @@ Tasks that you've marked as completed appear here. Each completed task comes wit
 
 ### Restore Button:
 If you need to move a task back to the Unfinished Todos section, perhaps because it wasn't completed or was moved by mistake, use this button.
-# How It Works
+## How It Works
 1. Adding Tasks  
 Use the input form to type in a task, then click the "Add" button. The task will appear in the Unfinished Todos section.  
 2.Completing Tasks:  
