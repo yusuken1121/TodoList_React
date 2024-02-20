@@ -21,13 +21,15 @@ Tasks that you've marked as completed appear here. Each completed task comes wit
 ### Restore Button:
 If you need to move a task back to the Unfinished Todos section, perhaps because it wasn't completed or was moved by mistake, use this button.
 ## How It Works
+
 1. Adding Tasks  
-Use the input form to type in a task, then click the "Add" button. The task will appear in the Unfinished Todos section.  
-2.Completing Tasks:  
+Use the input form to type in a task, then click the "Add" button. The task will appear in the Unfinished Todos section. 
+
+2. Completing Tasks:  
 For each task in the Unfinished Todos section, you can mark it as complete by clicking the "Complete" button, which moves it to the Completed Todos section.  
-3.Deleting Tasks:  
+3. Deleting Tasks:  
 If you wish to delete a task from the Unfinished Todos section, simply click the "Delete" button next to the task. This action is permanent.  
-4.Restoring Tasks:  
+4. Restoring Tasks:  
 Should you need to move a task back to the Unfinished Todos section from the Completed Todos, click the "Restore" button next to the task in the Completed Todos section.
 ## Conclusion
 The ToDo List App is designed to be a simple, efficient tool for managing your daily tasks. Whether you're tracking your personal chores or managing work-related tasks, this app provides a clear, straightforward way to stay organized.
